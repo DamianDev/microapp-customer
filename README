@@ -1,0 +1,9 @@
+To run it in docker use: docker-compose up -d
+
+To access mongodb, attach tu the container:
+
+docker exec -it mongo /bin/bash
+
+Then log to mongo:
+
+mongosh -u <username> -p <password> --authenticationDatabase <database>
